@@ -85,6 +85,7 @@ def plot_cm2(target_train, train_pred, target_valid, valid_pred, title, figsize=
     plt.show()
     
 from sklearn.metrics import roc_curve, classification_report
+from sklearn.metrics import roc_auc_score
 
 def roc_auc_plot(model, train, target_train, valid, target_valid):
     # Draw ROC-UAC plots and print report: precision, recall, f1-score, support
@@ -110,14 +111,17 @@ def roc_auc_plot(model, train, target_train, valid, target_valid):
     valid_pred_prob = model.predict(valid)    
     valid_pred = get_binary_prediction(valid_pred_prob, threshold=0.5)
 
+    print("ROC_AUC Score: ", round(roc_auc_score(target_train, train_pred_prob),4))
+    roc_plot(target_train, train_pred_prob, "ROC curve for training data")
+          
+    print("ROC_AUC Score: ",round(roc_auc_score(target_valid, valid_pred_prob),4))                
+    roc_plot(target_valid, valid_pred_prob, "ROC curve for test data")    
 
     print('Classification report for training data\n',
           classification_report(target_train, train_pred, target_names=['0', '1']))
-    print('Classification report for validation data\n',
+    print('Classification report for test data\n',
           classification_report(target_valid, valid_pred, target_names=['0', '1']))
 
-    roc_plot(target_train, train_pred_prob, "ROC curve for training data")
-    roc_plot(target_valid, valid_pred_prob, "ROC curve for validation data")    
     
 import shap    
     
