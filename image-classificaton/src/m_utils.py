@@ -9,6 +9,6 @@ def show_dic_items(dic_name, num=3):
         if i == (num -1) :
             break
             
-    return None
+
 
 

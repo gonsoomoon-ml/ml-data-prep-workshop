@@ -21,5 +21,17 @@
     - https://cocodataset.org
 - The CIFAR-10 dataset
     - https://www.cs.toronto.edu/~kriz/cifar.html
+- SageMaker built-in Image Classification Algorithm
+    - https://docs.aws.amazon.com/sagemaker/latest/dg/image-classification.html    
 - TensorFlow Datasets 공식 페이지
     - https://www.tensorflow.org/datasets/overview
+- SageMaker-Tensorflow-Step-by-Step 워크샵 
+    - 세이지 메이커 TF Getting Started, Horovod, Data Distributed Parallelism 포함
+    - https://github.com/gonsoomoon-ml/SageMaker-Tensorflow-Step-By-Step    
+* SageMaker-PyTorch-Step-By-Step
+    * 세이지 메이커 Pytorch Getting Started, Horovod, Data Distributed Parallelism 포함
+    * https://github.com/gonsoomoon-ml/SageMaker-PyTorch-Step-By-Step
+
+    
+
+    
