@@ -2,11 +2,15 @@
 ---
 # ML 데이터 준비 및 ML Workflow 프로토 타이핑
 ---
-
-<br></br>
+<pre></pre>
 # 1. 워크샵 배경
 ---
 ## 1.1 Andrew Ng 의 **"데이터 준비"** 의 중요성에 대한 의견
+ ML Workflow 를 개발하기 위해서는 "ML 데이터 준비" (데이터 수집, 정제, 탐색, 분석, 이해 및 정리) 를 하는 과정이 약 80% 정도를 
+차지 한다고 합니다. Andrew Ng 는 "From Model-Centric To Data-Centric" 으로 바꾸어야 한다고 합니다. 이유는 많은 ML 알고리즘 및 코드는 많이 발전하였고, 이미 검증이 되었다고 합니다. 하지만 "데이터 준비" 는 많이 과소평가 되고, "낮은 데이터 품질" 로 인해서 ML Workflow의 개발 속도의 저하 및 Production 시에 낮은 모델 추론 성능이 나온다고 합니다.
+
+
+
 ![Andrew_Ng_quote.png](img/Andrew_Ng_quote.png)
 
 #### 소스:
@@ -14,20 +18,20 @@
     - https://www.forbes.com/sites/gilpress/2021/06/16/andrew-ng-launches-a-campaign-for-data-centric-ai/?sh=2dee9f3574f5
 - A Chat with Andrew on MLOps: From Model-centric to Data-centric AI (Mar 2021)
     - https://www.youtube.com/watch?v=06-AZXmwHjo
-
-
+- Data Prep Still Dominates Data Scientists’ Time, Survey Finds, July 2020
+    - https://www.datanami.com/2020/07/06/data-prep-still-dominates-data-scientists-time-survey-finds/
+- Cleaning Big Data: Most Time-Consuming, Least Enjoyable Data Science Task, Survey Says, Mar 2016
+    - https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/?sh=6a0651e26f63
 
 
 # 2. 워크샵 개요
 ---
- ML Workflow 를 개발하기 위해서는 "ML 데이터 준비" (데이터 수집, 정제, 탐색, 분석, 이해 및 정리) 를 하는 과정이 약 80% 정도를 
-차지 한다고 합니다. Andrew Ng 는 "From Model-Centric To Data-Centric" 으로 바꾸어야 한다고 합니다. 이유는 많은 ML 알고리즘 및 코드는 많이 발전하였고, 이미 검증이 되었다고 합니다. 하지만 "데이터 준비" 는 많이 과소평가 되고, "낮은 데이터 품질" 로 인해서 ML Workflow의 개발 속도의 저하 및 Production 시에 낮은 모델 추론 성능이 나온다고 합니다.
+머신 러닝 문제의 해결을 위해서는 문제 정의, 데이타 준비, 모델 훈련 알고리즘 선정, 모델 훈련, 튜닝, 모델 배포 및 추론의 기본 ML Workflow가 있습니다.  ML Workflow 를 개발하기 위해서는 "ML 데이터 준비" (데이터 수집, 정제, 탐색, 분석, 이해 및 정리) 를 하는 과정이 약 80% 정도를 차지 한다고 합니다. 이번 세션에서는 테블러 (Tabular) 및 아미지에 대한  데이터 준비를 통하여 ML Workflow 프로토타이핑을 해보겠습니다. 테블러 데이터는 “고객 이탈” 데이터를 준비해서, SageMaker XGBoost, AutoGluon 을 통해 모델 훈련을 하고 로컬 추론을 합니다. 이미지 데이터는 COCO, Cifar 10 데이터를 준비하여 Tensorflow, Pytorch, SageMaker 내장 알고리즘을 통해서 모델 훈련을 각각 하고, 로컬에서 추론을 하는 ML 프로토타이핑 을 배우겠습니다.
 
- **이 워크샵에서는 Tabular(CSV 포맷) 및 이미지 데이터의 준비를 통하여 빠른 ML 프로토타이핑을 실습으로 해보는 과정을 준비 했습니다.**
 
-#### 소스
-- [Data Prep Still Dominates Data Scientists’ Time, Survey Finds, July 2020](https://www.datanami.com/2020/07/06/data-prep-still-dominates-data-scientists-time-survey-finds/)
-- [Cleaning Big Data: Most Time-Consuming, Least Enjoyable Data Science Task, Survey Says, Mar 2016](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/?sh=6a0651e26f63)
+ **이 워크샵에서는 Tabular(CSV 포맷) 및 이미지 데이터의 준비를 SageMaker Notebook 을 통해서 빠른 ML 프로토타이핑을 실습 해보는 과정을 준비 했습니다.**
+
+
     
 
 
