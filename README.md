@@ -106,6 +106,8 @@
 
 
 ## Tabular (CSV 형식의 데이터)
+- Customer churn prediction with SageMaker XGBoost
+    - https://github.com/mullue/churn-pred-xgboost
 - Pandas Profiling
     - https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/
 - Tablur Data (CSV 데이터) 피쳐 선택 기본 가이드
