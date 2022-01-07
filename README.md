@@ -41,7 +41,28 @@
 ## 2.2 이미지 준비 및 ML 프로토 타이핑
 ![image_prep_summary.png](img/image_prep_summary.png)
 
-# 3. 주요 소스 코드
+# 3. 워크샵 추천 선수 지식    
+## 3.1. 선수 지식
+- AWS Cloud 일반 지식 (S3, EC2, IAM 등) (초급/중급 정도 수준)
+- Python 코딩 (Pandas, Numpy 패키지 초급/중급 정도 수준)
+- ML 기초 지식 수준  (Jupyter Notebook 사용 경험 있음)
+
+## 3.2. 추천 지식
+* SageMaker 소개 비디오
+    * 2020년 6월 버전 (1분 40초) -->  [간단소개](https://www.youtube.com/watch?v=jSrg1BgQzRo)
+    - 2021년 2월 버전 (4분 46초) --> [Introduction to Amazon SageMaker](https://www.youtube.com/watch?v=Qv_Tr_BCFCQ)
+- [세이지메이커 셀프 스터디](https://github.com/gonsoomoon-ml/Self-Study-On-SageMaker)
+
+# 4. 실습 환경  
+
+## 4.1 Cloud Formation 으로 SageMaker Notebook 생성
+- 여기 링크로 이동하세요. --> [실습 환경 구성](setup/README.md)
+
+## 4.2 수동으로 SageMaker Notebook 생성
+- 수동으로 설정을 원하시는 분은 여기 링크를 참조 하세요. --> [노트북 인스턴스 생성](https://docs.aws.amazon.com/ko_kr/sagemaker/latest/dg/howitworks-create-ws.html)
+
+
+# 5. 주요 소스 코드
 ---
 
 ```
