@@ -49,7 +49,7 @@
 
 ## 3.2. 추천 지식
 * SageMaker 소개 비디오
-    * 2020년 6월 버전 (1분 40초) -->  [간단소개](https://www.youtube.com/watch?v=jSrg1BgQzRo)
+    * 2020년 9월 버전 (1분 40초) -->  [간단소개](https://www.youtube.com/watch?v=EhExK4JgXvE)
     - 2021년 2월 버전 (4분 46초) --> [Introduction to Amazon SageMaker](https://www.youtube.com/watch?v=Qv_Tr_BCFCQ)
 - [세이지메이커 셀프 스터디](https://github.com/gonsoomoon-ml/Self-Study-On-SageMaker)
 
@@ -59,6 +59,7 @@
 - 여기 링크로 이동하세요. --> [실습 환경 구성](setup/README.md)
 
 ## 4.2 수동으로 SageMaker Notebook 생성
+#### <font color="red">ml.t3.xlarge 에서 테스트 완료 되었습니다. 이 노트북 인스턴스 타입을 사용 해주세요.</font>
 - 수동으로 설정을 원하시는 분은 여기 링크를 참조 하세요. --> [노트북 인스턴스 생성](https://docs.aws.amazon.com/ko_kr/sagemaker/latest/dg/howitworks-create-ws.html)
 
 
