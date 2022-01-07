@@ -82,31 +82,30 @@
      - COCO, Cifar 10 데이터 준비
  | |-1.2.structuring_data.ipynb
      - 이미지 분류 폴더 생성 및 이미지 복사
-     
- | |-2.1.builtin_preprocessing.ipynb 
-     - SageMaker 내장 이미지 분류 알고리즘을 위해 RecordIO 파일 생성
- | |-2.2.builtin_training.ipynb 
-     - SageMaker 내장 이미지 분류 알고리즘으로 모델 훈련
-     
- | |-3.1.tensorflow_preprocessing.ipynb 
+          
+ | |-2.1.tensorflow_preprocessing.ipynb 
      - TFRecord 파일 생성
- | |-3.2.tensorflow_training.ipynb 
+ | |-2.2.tensorflow_training.ipynb 
      - SageMaker Tensorflow 프레임워크로 훈련, 로컬 추론
  | |-training_tensorflow
  | | |-tensorflow_train.py
-     - 3.2.tensorflow_training.ipynb 에서 사용한 Tensforflow 훈련 코드
+     - 2.2.tensorflow_training.ipynb 에서 사용한 Tensforflow 훈련 코드
  | | |-requirements.txt     
      - 파이썬 디펜던시 파일
 
-     
- | |-4.1.pytorch_preprocessing.ipynb 
+ | |-3.1.pytorch_preprocessing.ipynb 
      - 이미지 리사이징 하여 저장
- | |-4.2.pytorch_training.ipynb
+ | |-3.2.pytorch_training.ipynb
      - SageMaker PyTorch 프레임워크로 훈련, 로컬 추론      
  | |-training_pytorch
  | | |-pytorch_train.py
-     - 4.1.pytorch_preprocessing.ipynb  에서 사용한 PyTorch 훈련 코드
-     
+     - 3.1.pytorch_preprocessing.ipynb  에서 사용한 PyTorch 훈련 코드
+
+ | |-4.1.builtin_preprocessing.ipynb 
+     - SageMaker 내장 이미지 분류 알고리즘을 위해 RecordIO 파일 생성
+ | |-4.2.builtin_training.ipynb 
+     - SageMaker 내장 이미지 분류 알고리즘으로 모델 훈련
+
  | |-src
  | | |-m_utils.py
      - 유틸리티 함수들
